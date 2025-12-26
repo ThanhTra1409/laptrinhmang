@@ -1,4 +1,4 @@
-# -*- coding: utf-8 -*-
+﻿# -*- coding: utf-8 -*-
 import os
 import re
 from datetime import datetime
@@ -139,7 +139,7 @@ def get_footer_html(site_title):
         </div>
       </div>
       <div class="footer-bottom">
-        <p><span data-i18n="footer-copyright">© {datetime.now().year}</span> <span data-i18n="site-title">{site_title}</span></p>
+        <p><span data-i18n="footer-copyright">Â© {datetime.now().year}</span> <span data-i18n="site-title">{site_title}</span></p>
       </div>
     </div>
   </footer>'''
@@ -182,7 +182,7 @@ def build():
     copy_static()
 
     # read config title
-    site_title = 'Nguyễn Thanh Trà'
+    site_title = 'Nguyá»…n Thanh TrÃ '
     tagline = ''
     cfg = os.path.join(ROOT, 'config.toml')
     if os.path.exists(cfg):
@@ -200,7 +200,7 @@ def build():
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>{site_title}</title>
-  <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👨‍💻</text></svg>">
+  <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>ðŸ‘¨â€ðŸ’»</text></svg>">
   <link rel="stylesheet" href="/css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -233,25 +233,25 @@ def build():
           </div>
         </li>
       </ul>
-      <div class="menu-toggle" onclick="toggleMenu()" aria-label="menu">☰</div>
+      <div class="menu-toggle" onclick="toggleMenu()" aria-label="menu">â˜°</div>
     </nav>
   </header>
   <main>
     <section class="hero">
       <div class="hero-content">
-        <p class="hero-greeting" data-i18n="hero-greeting">Xin chào, tôi là</p>
-        <h1 data-i18n="hero-name">Nguyễn Thanh Trà</h1>
+        <p class="hero-greeting" data-i18n="hero-greeting">Xin chÃ o, tÃ´i lÃ </p>
+        <h1 data-i18n="hero-name">Nguyá»…n Thanh TrÃ </h1>
         <div class="hero-intro">
           <p><strong data-i18n="hero-role">Software Engineer | Backend Developer</strong></p>
-          <p data-i18n="hero-intro-main">Tôi là sinh viên năm 4 yêu thích công nghệ phần mềm, hiện đang tìm hiểu các kiến thức cơ bản về lập trình và phát triển phần mềm. Có tinh thần học hỏi, chủ động rèn luyện tư duy logic và kỹ năng chuyên môn để phục vụ học tập và công việc trong tương lai.</p>
+          <p data-i18n="hero-intro-main">TÃ´i lÃ  sinh viÃªn nÄƒm 4 yÃªu thÃ­ch cÃ´ng nghá»‡ pháº§n má»m, hiá»‡n Ä‘ang tÃ¬m hiá»ƒu cÃ¡c kiáº¿n thá»©c cÆ¡ báº£n vá» láº­p trÃ¬nh vÃ  phÃ¡t triá»ƒn pháº§n má»m. CÃ³ tinh tháº§n há»c há»i, chá»§ Ä‘á»™ng rÃ¨n luyá»‡n tÆ° duy logic vÃ  ká»¹ nÄƒng chuyÃªn mÃ´n Ä‘á»ƒ phá»¥c vá»¥ há»c táº­p vÃ  cÃ´ng viá»‡c trong tÆ°Æ¡ng lai.</p>
         </div>
         <div class="cta">
           <a class="btn primary" href="/posts/" data-i18n="view-posts">Xem portfolio</a>
-          <a class="btn ghost" href="/about/" data-i18n="about-me">Liên hệ</a>
+          <a class="btn ghost" href="/about/" data-i18n="about-me">LiÃªn há»‡</a>
         </div>
       </div>
       <div class="hero-image-wrapper">
-        <img src="/images/133.jpg" alt="Nguyễn Thanh Trà" class="hero-avatar">
+        <img src="/images/133.jpg" alt="Nguyá»…n Thanh TrÃ " class="hero-avatar">
       </div>
     </section>
     <section class="intro">
@@ -259,13 +259,13 @@ def build():
     </section>
     
     <section class="certificates-section" style="max-width: 1200px; margin: 4rem auto; padding: 0 2rem;">
-      <h2 style="text-align: center; font-size: 2rem; margin-bottom: 3rem;" data-i18n="certificates">Chứng chỉ và thành tựu</h2>
+      <h2 style="text-align: center; font-size: 2rem; margin-bottom: 3rem;" data-i18n="certificates">Chá»©ng chá»‰ vÃ  thÃ nh tá»±u</h2>
       <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 2rem;">
         <div class="certificate-card" style="cursor: pointer; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.1); transition: transform 0.3s; background: white;" onclick="openImageModal('/images/cert-networking-basics.jpg')">
           <img src="/images/cert-networking-basics.jpg" alt="Networking Basics Certificate" style="width: 100%; height: auto; object-fit: contain;">
           <div style="padding: 1.5rem; text-align: center;">
             <h3 style="margin: 0 0 0.5rem 0; font-size: 1.2rem; color: #5b6fce;">Networking Basics</h3>
-            <p style="margin: 0.5rem 0; color: #666; font-size: 0.95rem;">Nguyễn Thanh Trà</p>
+            <p style="margin: 0.5rem 0; color: #666; font-size: 0.95rem;">Nguyá»…n Thanh TrÃ </p>
             <p style="margin: 0.5rem 0; color: #999; font-size: 0.9rem;">Nov 2025</p>
           </div>
         </div>
@@ -274,7 +274,7 @@ def build():
           <img src="/images/cert-js-essentials-1.jpg" alt="JavaScript Essentials 1 Certificate" style="width: 100%; height: auto; object-fit: contain;">
           <div style="padding: 1.5rem; text-align: center;">
             <h3 style="margin: 0 0 0.5rem 0; font-size: 1.2rem; color: #5b6fce;">JavaScript Essentials 1</h3>
-            <p style="margin: 0.5rem 0; color: #666; font-size: 0.95rem;">Nguyễn Thanh Trà</p>
+            <p style="margin: 0.5rem 0; color: #666; font-size: 0.95rem;">Nguyá»…n Thanh TrÃ </p>
             <p style="margin: 0.5rem 0; color: #999; font-size: 0.9rem;">Dec 2025</p>
           </div>
         </div>
@@ -283,7 +283,7 @@ def build():
           <img src="/images/cert-js-essentials-2.jpg" alt="JavaScript Essentials 2 Certificate" style="width: 100%; height: auto; object-fit: contain;">
           <div style="padding: 1.5rem; text-align: center;">
             <h3 style="margin: 0 0 0.5rem 0; font-size: 1.2rem; color: #5b6fce;">JavaScript Essentials 2</h3>
-            <p style="margin: 0.5rem 0; color: #666; font-size: 0.95rem;">Nguyễn Thanh Trà</p>
+            <p style="margin: 0.5rem 0; color: #666; font-size: 0.95rem;">Nguyá»…n Thanh TrÃ </p>
             <p style="margin: 0.5rem 0; color: #999; font-size: 0.9rem;">Dec 2025</p>
           </div>
         </div>
@@ -298,7 +298,7 @@ def build():
     
     <section class="social-section">
       <div class="social-container">
-        <h2 data-i18n="social-title">Xã hội</h2>
+        <h2 data-i18n="social-title">XÃ£ há»™i</h2>
         <div class="social-grid">
           <a href="https://github.com/nttra204" target="_blank" class="social-card">
             <i class="fab fa-github social-icon"></i>
@@ -308,7 +308,7 @@ def build():
           <a href="https://www.facebook.com/nguyen.thanh.tra.970568?locale=vi_VN" target="_blank" class="social-card">
             <i class="fab fa-facebook social-icon"></i>
             <h3>Facebook</h3>
-            <p>Nguyễn Thanh Trà</p>
+            <p>Nguyá»…n Thanh TrÃ </p>
           </a>
           <a href="https://www.instagram.com/nttra204_/?igsh=MXVlc3p1NG4zdnBidw%3D%3D&utm_source=qr" target="_blank" class="social-card">
             <i class="fab fa-instagram social-icon"></i>
@@ -318,14 +318,14 @@ def build():
           <a href="https://www.linkedin.com/in/nttra204" target="_blank" class="social-card">
             <i class="fab fa-linkedin social-icon"></i>
             <h3>LinkedIn</h3>
-            <p>Nguyễn Thanh Trà</p>
+            <p>Nguyá»…n Thanh TrÃ </p>
           </a>
         </div>
       </div>
     </section>
   </main>
   {get_footer_html(site_title)}
-  <script src="/js/i18n.js"></script>
+  <script src="/js/i18n.js?v=1.1"></script>
   <script>
   function toggleMenu(){{
     document.body.classList.toggle('menu-open');
@@ -370,7 +370,7 @@ def build():
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>About - {site_title}</title>
-  <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👨‍💻</text></svg>">
+  <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>ðŸ‘¨â€ðŸ’»</text></svg>">
   <link rel="stylesheet" href="/css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -398,7 +398,7 @@ def build():
           </div>
         </li>
       </ul>
-      <div class="menu-toggle" onclick="toggleMenu()" aria-label="menu">☰</div>
+      <div class="menu-toggle" onclick="toggleMenu()" aria-label="menu">â˜°</div>
     </nav>
   </header>
   <main style="padding: 0; max-width: 100%;">
@@ -406,20 +406,20 @@ def build():
       <section class="about-section personal-info-section" style="max-width: 100%; padding: 3rem 0; margin: 0; display: flex; justify-content: center;">
         <div style="width: 85%; max-width: 1200px;">
           <div style="background: white; padding: 3rem 4rem; box-shadow: 0 2px 8px rgba(0,0,0,0.1); border-radius: 12px; display: flex; flex-direction: column;">
-            <h2 data-i18n="personal-info" style="text-align: center; margin-bottom: 3rem; margin-top: 0; font-size: 2.5rem; font-weight: 700; margin-right: -114px;">Thông tin cá nhân</h2>
+            <h2 data-i18n="personal-info" style="text-align: center; margin-bottom: 3rem; margin-top: 0; font-size: 2.5rem; font-weight: 700; margin-right: -114px;">ThÃ´ng tin cÃ¡ nhÃ¢n</h2>
             <div style="display: flex; align-items: flex-start; justify-content: flex-start; gap: 4rem; max-width: 100%; margin: 0 auto;">
               <div style="flex-shrink: 0; margin-left: -114px; margin-top: -76px;">
-                <img src="/images/133.jpg" alt="Nguyễn Thanh Trà" style="width: 280px; height: 380px; border-radius: 16px; object-fit: cover; border: 4px solid rgba(107, 114, 128, 0.2); box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);">
+                <img src="/images/133.jpg" alt="Nguyá»…n Thanh TrÃ " style="width: 280px; height: 380px; border-radius: 16px; object-fit: cover; border: 4px solid rgba(107, 114, 128, 0.2); box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);">
               </div>
               <div style="flex: 1;">
                 <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem 4rem; max-width: 600px; margin-bottom: 2rem;">
                   <div>
-                    <strong data-i18n="fullname-label" style="color: #6b7280; font-size: 1rem; display: block; margin-bottom: 0.5rem;">Họ và tên</strong>
-                    <span style="font-size: 1.1rem; color: #2d3748; font-weight: 500;">Nguyễn Thanh Trà</span>
+                    <strong data-i18n="fullname-label" style="color: #6b7280; font-size: 1rem; display: block; margin-bottom: 0.5rem;">Há» vÃ  tÃªn</strong>
+                    <span style="font-size: 1.1rem; color: #2d3748; font-weight: 500;">Nguyá»…n Thanh TrÃ </span>
                   </div>
                   
                   <div>
-                    <strong data-i18n="phone-label" style="color: #6b7280; font-size: 1rem; display: block; margin-bottom: 0.5rem;">SĐT</strong>
+                    <strong data-i18n="phone-label" style="color: #6b7280; font-size: 1rem; display: block; margin-bottom: 0.5rem;">SÄT</strong>
                     <span style="font-size: 1.1rem; color: #2d3748; font-weight: 500;">0941779093</span>
                   </div>
                   
@@ -429,12 +429,12 @@ def build():
                   </div>
                   
                   <div>
-                    <strong data-i18n="location-label" style="color: #6b7280; font-size: 1rem; display: block; margin-bottom: 0.5rem;">Địa chỉ</strong>
-                    <span data-i18n="location" style="font-size: 1.1rem; color: #2d3748; font-weight: 500;">TP. Hồ Chí Minh</span>
+                    <strong data-i18n="location-label" style="color: #6b7280; font-size: 1rem; display: block; margin-bottom: 0.5rem;">Äá»‹a chá»‰</strong>
+                    <span data-i18n="location" style="font-size: 1.1rem; color: #2d3748; font-weight: 500;">TP. Há»“ ChÃ­ Minh</span>
                   </div>
                 </div>
                 <div style="padding: 1.5rem 2rem; background: linear-gradient(135deg, #667eea15 0%, #764ba215 100%); border-left: 4px solid #667eea; border-radius: 8px; font-style: italic; color: #4b5563; font-size: 1.05rem; line-height: 1.6; max-width: 600px;">
-                  "<span data-i18n="slogan">Công nghệ luôn thay đổi, tôi chọn cách học hỏi mỗi ngày để không bị bỏ lại phía sau.</span>"
+                  "<span data-i18n="slogan">CÃ´ng nghá»‡ luÃ´n thay Ä‘á»•i, tÃ´i chá»n cÃ¡ch há»c há»i má»—i ngÃ y Ä‘á»ƒ khÃ´ng bá»‹ bá» láº¡i phÃ­a sau.</span>"
                 </div>
               </div>
             </div>
@@ -443,41 +443,41 @@ def build():
       </section>
       
       <section class="about-section" style="max-width: 90%; margin: 2rem auto; padding: 0 2rem;">
-        <h2 data-i18n="education" style="text-align: center; margin-bottom: 3rem; font-size: 2rem;">Học vấn</h2>
+        <h2 data-i18n="education" style="text-align: center; margin-bottom: 3rem; font-size: 2rem;">Há»c váº¥n</h2>
         
         <div class="education-card" style="background: white; padding: 2.5rem; border-radius: 16px; box-shadow: 0 4px 16px rgba(0,0,0,0.08); transition: all 0.3s ease; cursor: pointer; border: 2px solid transparent; max-width: 900px; margin: 0 auto; position: relative; overflow: hidden;">
           <div style="position: relative; z-index: 1;">
             <h3 style="color: #4b5563; font-size: 1.5rem; font-weight: 700; margin-bottom: 1rem;">
-              <span data-i18n="university">Đại học Công nghệ TP.HCM (HUTECH)</span> | 2022 - 2026
+              <span data-i18n="university">Äáº¡i há»c CÃ´ng nghá»‡ TP.HCM (HUTECH)</span> | 2022 - 2026
             </h3>
             <p style="color: #6b7280; font-size: 1.1rem; margin-bottom: 2rem;">
-              <span data-i18n="major-label">Ngành</span>: <strong data-i18n="major" style="color: #4b5563;">Công nghệ Phần mềm</strong>
+              <span data-i18n="major-label">NgÃ nh</span>: <strong data-i18n="major" style="color: #4b5563;">CÃ´ng nghá»‡ Pháº§n má»m</strong>
             </p>
             
-            <h4 data-i18n="knowledge-title" style="color: #4b5563; font-size: 1.2rem; font-weight: 600; margin-bottom: 1rem;">Kiến thức chuyên môn:</h4>
+            <h4 data-i18n="knowledge-title" style="color: #4b5563; font-size: 1.2rem; font-weight: 600; margin-bottom: 1rem;">Kiáº¿n thá»©c chuyÃªn mÃ´n:</h4>
             <ul style="list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 0.8rem;">
-              <li data-i18n="knowledge-1" style="padding: 0.5rem 0; color: #6b7280; font-size: 1rem; transition: all 0.3s ease;">✓ Lập trình hướng đối tượng (OOP)</li>
-              <li data-i18n="knowledge-2" style="padding: 0.5rem 0; color: #6b7280; font-size: 1rem; transition: all 0.3s ease;">✓ Cấu trúc dữ liệu & Giải thuật</li>
-              <li data-i18n="knowledge-3" style="padding: 0.5rem 0; color: #6b7280; font-size: 1rem; transition: all 0.3s ease;">✓ Lập trình mạng & Distributed Systems</li>
-              <li data-i18n="knowledge-4" style="padding: 0.5rem 0; color: #6b7280; font-size: 1rem; transition: all 0.3s ease;">✓ Database Design & Management</li>
-              <li data-i18n="knowledge-5" style="padding: 0.5rem 0; color: #6b7280; font-size: 1rem; transition: all 0.3s ease;">✓ Software Engineering & Design Patterns</li>
+              <li data-i18n="knowledge-1" style="padding: 0.5rem 0; color: #6b7280; font-size: 1rem; transition: all 0.3s ease;">âœ“ Láº­p trÃ¬nh hÆ°á»›ng Ä‘á»‘i tÆ°á»£ng (OOP)</li>
+              <li data-i18n="knowledge-2" style="padding: 0.5rem 0; color: #6b7280; font-size: 1rem; transition: all 0.3s ease;">âœ“ Cáº¥u trÃºc dá»¯ liá»‡u & Giáº£i thuáº­t</li>
+              <li data-i18n="knowledge-3" style="padding: 0.5rem 0; color: #6b7280; font-size: 1rem; transition: all 0.3s ease;">âœ“ Láº­p trÃ¬nh máº¡ng & Distributed Systems</li>
+              <li data-i18n="knowledge-4" style="padding: 0.5rem 0; color: #6b7280; font-size: 1rem; transition: all 0.3s ease;">âœ“ Database Design & Management</li>
+              <li data-i18n="knowledge-5" style="padding: 0.5rem 0; color: #6b7280; font-size: 1rem; transition: all 0.3s ease;">âœ“ Software Engineering & Design Patterns</li>
             </ul>
           </div>
         </div>
       </section>
       
       <section class="about-section" style="max-width: 90%; margin: 2rem auto; padding: 0 2rem;">
-        <h2 data-i18n="programming-skills" style="text-align: center; margin-bottom: 3rem; font-size: 2rem;">Kỹ năng lập trình đã học</h2>
+        <h2 data-i18n="programming-skills" style="text-align: center; margin-bottom: 3rem; font-size: 2rem;">Ká»¹ nÄƒng láº­p trÃ¬nh Ä‘Ã£ há»c</h2>
         
         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; max-width: 1200px; margin: 0 auto;">
           <!-- Backend Card -->
           <div class="skill-card" style="background: white; padding: 2rem; border-radius: 16px; box-shadow: 0 4px 16px rgba(0,0,0,0.08); transition: all 0.3s ease; cursor: pointer; border: 2px solid transparent;">
             <h3 data-i18n="backend-dev" style="color: #4b5563; margin-bottom: 1.5rem; font-size: 1.5rem; font-weight: 700;">Backend Development</h3>
             <ul style="list-style: none; padding: 0; margin: 0;">
-              <li style="padding: 0.5rem 0; color: #6b7280; font-size: 1rem;">✓ Java (Spring Boot, Socket Programming, Multithreading, NIO)</li>
-              <li style="padding: 0.5rem 0; color: #6b7280; font-size: 1rem;">✓ Node.js (Express.js, Socket.IO, REST API)</li>
-              <li style="padding: 0.5rem 0; color: #6b7280; font-size: 1rem;">✓ Database: MySQL, PostgreSQL, MongoDB</li>
-              <li style="padding: 0.5rem 0; color: #6b7280; font-size: 1rem;">✓ API Design (RESTful, WebSocket)</li>
+              <li style="padding: 0.5rem 0; color: #6b7280; font-size: 1rem;">âœ“ Java (Spring Boot, Socket Programming, Multithreading, NIO)</li>
+              <li style="padding: 0.5rem 0; color: #6b7280; font-size: 1rem;">âœ“ Node.js (Express.js, Socket.IO, REST API)</li>
+              <li style="padding: 0.5rem 0; color: #6b7280; font-size: 1rem;">âœ“ Database: MySQL, PostgreSQL, MongoDB</li>
+              <li style="padding: 0.5rem 0; color: #6b7280; font-size: 1rem;">âœ“ API Design (RESTful, WebSocket)</li>
             </ul>
           </div>
           
@@ -485,9 +485,9 @@ def build():
           <div class="skill-card" style="background: white; padding: 2rem; border-radius: 16px; box-shadow: 0 4px 16px rgba(0,0,0,0.08); transition: all 0.3s ease; cursor: pointer; border: 2px solid transparent;">
             <h3 data-i18n="frontend-dev" style="color: #4b5563; margin-bottom: 1.5rem; font-size: 1.5rem; font-weight: 700;">Frontend Development</h3>
             <ul style="list-style: none; padding: 0; margin: 0;">
-              <li style="padding: 0.5rem 0; color: #6b7280; font-size: 1rem;">✓ HTML5, CSS3, JavaScript (ES6+)</li>
-              <li style="padding: 0.5rem 0; color: #6b7280; font-size: 1rem;">✓ React/Vue.js basics</li>
-              <li data-i18n="responsive-design" style="padding: 0.5rem 0; color: #6b7280; font-size: 1rem;">✓ Responsive Web Design</li>
+              <li style="padding: 0.5rem 0; color: #6b7280; font-size: 1rem;">âœ“ HTML5, CSS3, JavaScript (ES6+)</li>
+              <li style="padding: 0.5rem 0; color: #6b7280; font-size: 1rem;">âœ“ React/Vue.js basics</li>
+              <li data-i18n="responsive-design" style="padding: 0.5rem 0; color: #6b7280; font-size: 1rem;">âœ“ Responsive Web Design</li>
             </ul>
           </div>
           
@@ -495,26 +495,26 @@ def build():
           <div class="skill-card" style="background: white; padding: 2rem; border-radius: 16px; box-shadow: 0 4px 16px rgba(0,0,0,0.08); transition: all 0.3s ease; cursor: pointer; border: 2px solid transparent;">
             <h3 data-i18n="tools-tech" style="color: #4b5563; margin-bottom: 1.5rem; font-size: 1.5rem; font-weight: 700;">Tools & Technologies</h3>
             <ul style="list-style: none; padding: 0; margin: 0;">
-              <li style="padding: 0.5rem 0; color: #6b7280; font-size: 1rem;">✓ Git/GitHub</li>
-              <li style="padding: 0.5rem 0; color: #6b7280; font-size: 1rem;">✓ Docker basics</li>
-              <li style="padding: 0.5rem 0; color: #6b7280; font-size: 1rem;">✓ Postman, VS Code</li>
-              <li style="padding: 0.5rem 0; color: #6b7280; font-size: 1rem;">✓ Linux command line</li>
+              <li style="padding: 0.5rem 0; color: #6b7280; font-size: 1rem;">âœ“ Git/GitHub</li>
+              <li style="padding: 0.5rem 0; color: #6b7280; font-size: 1rem;">âœ“ Docker basics</li>
+              <li style="padding: 0.5rem 0; color: #6b7280; font-size: 1rem;">âœ“ Postman, VS Code</li>
+              <li style="padding: 0.5rem 0; color: #6b7280; font-size: 1rem;">âœ“ Linux command line</li>
             </ul>
           </div>
         </div>
       </section>
       
       <section class="about-section" style="max-width: 90%; margin: 2rem auto; padding: 0 2rem;">
-        <h2 data-i18n="projects-portfolio" style="text-align: center; margin-bottom: 3rem; font-size: 2rem;">Dự án & Portfolio</h2>
+        <h2 data-i18n="projects-portfolio" style="text-align: center; margin-bottom: 3rem; font-size: 2rem;">Dá»± Ã¡n & Portfolio</h2>
         
         <div class="projects-card" style="background: white; padding: 2.5rem; border-radius: 16px; box-shadow: 0 4px 16px rgba(0,0,0,0.08); transition: all 0.3s ease; cursor: pointer; border: 2px solid transparent; max-width: 900px; margin: 0 auto; position: relative; overflow: hidden;">
           <div style="position: relative; z-index: 1;">
-            <p data-i18n="blog-intro-text" style="color: #6b7280; font-size: 1.1rem; margin-bottom: 2rem; text-align: center;">Các bài viết trong blog là các kiến thức mà tôi đã được học:</p>
+            <p data-i18n="blog-intro-text" style="color: #6b7280; font-size: 1.1rem; margin-bottom: 2rem; text-align: center;">CÃ¡c bÃ i viáº¿t trong blog lÃ  cÃ¡c kiáº¿n thá»©c mÃ  tÃ´i Ä‘Ã£ Ä‘Æ°á»£c há»c:</p>
             <ul style="list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem;">
-              <li data-i18n="project-1" style="padding: 0.8rem; color: #6b7280; font-size: 1rem; transition: all 0.3s ease; border-left: 3px solid #d1d5db;">✓ Xây dựng TCP/UDP Server với Java</li>
-              <li data-i18n="project-2" style="padding: 0.8rem; color: #6b7280; font-size: 1rem; transition: all 0.3s ease; border-left: 3px solid #d1d5db;">✓ Phát triển RESTful API với Node.js & Express</li>
-              <li data-i18n="project-3" style="padding: 0.8rem; color: #6b7280; font-size: 1rem; transition: all 0.3s ease; border-left: 3px solid #d1d5db;">✓ Triển khai WebSocket real-time communication</li>
-              <li data-i18n="project-4" style="padding: 0.8rem; color: #6b7280; font-size: 1rem; transition: all 0.3s ease; border-left: 3px solid #d1d5db;">✓ Security & CORS handling</li>
+              <li data-i18n="project-1" style="padding: 0.8rem; color: #6b7280; font-size: 1rem; transition: all 0.3s ease; border-left: 3px solid #d1d5db;">âœ“ XÃ¢y dá»±ng TCP/UDP Server vá»›i Java</li>
+              <li data-i18n="project-2" style="padding: 0.8rem; color: #6b7280; font-size: 1rem; transition: all 0.3s ease; border-left: 3px solid #d1d5db;">âœ“ PhÃ¡t triá»ƒn RESTful API vá»›i Node.js & Express</li>
+              <li data-i18n="project-3" style="padding: 0.8rem; color: #6b7280; font-size: 1rem; transition: all 0.3s ease; border-left: 3px solid #d1d5db;">âœ“ Triá»ƒn khai WebSocket real-time communication</li>
+              <li data-i18n="project-4" style="padding: 0.8rem; color: #6b7280; font-size: 1rem; transition: all 0.3s ease; border-left: 3px solid #d1d5db;">âœ“ Security & CORS handling</li>
             </ul>
           </div>
         </div>
@@ -523,7 +523,7 @@ def build():
       {get_social_section_html()}
   </main>
   {get_footer_html(site_title)}
-  <script src="/js/i18n.js"></script>
+  <script src="/js/i18n.js?v=1.1"></script>
   <script>
   function toggleMenu(){{
     document.body.classList.toggle('menu-open');
@@ -574,7 +574,7 @@ def build():
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>{title} - {site_title}</title>
-  <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👨‍💻</text></svg>">
+  <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>ðŸ‘¨â€ðŸ’»</text></svg>">
   <link rel="stylesheet" href="/css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -602,7 +602,7 @@ def build():
           </div>
         </li>
       </ul>
-      <div class="menu-toggle" onclick="toggleMenu()" aria-label="menu">☰</div>
+      <div class="menu-toggle" onclick="toggleMenu()" aria-label="menu">â˜°</div>
     </nav>
   </header>
   <main>
@@ -615,7 +615,7 @@ def build():
     {get_social_section_html()}
   </main>
   {get_footer_html(site_title)}
-  <script src="/js/i18n.js"></script>
+  <script src="/js/i18n.js?v=1.1"></script>
   <script>
   function toggleMenu(){{
     document.body.classList.toggle('menu-open');
@@ -643,7 +643,7 @@ def build():
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>{title_en} - {site_title}</title>
-  <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👨‍💻</text></svg>">
+  <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>ðŸ‘¨â€ðŸ’»</text></svg>">
   <link rel="stylesheet" href="/css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -671,7 +671,7 @@ def build():
           </div>
         </li>
       </ul>
-      <div class="menu-toggle" onclick="toggleMenu()" aria-label="menu">☰</div>
+      <div class="menu-toggle" onclick="toggleMenu()" aria-label="menu">â˜°</div>
     </nav>
   </header>
   <main>
@@ -684,7 +684,7 @@ def build():
     {get_social_section_html()}
   </main>
   {get_footer_html(site_title)}
-  <script src="/js/i18n.js"></script>
+  <script src="/js/i18n.js?v=1.1"></script>
   <script>
   function toggleMenu(){{
     document.body.classList.toggle('menu-open');
@@ -733,7 +733,7 @@ def build():
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Blog - {site_title}</title>
-  <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👨‍💻</text></svg>">
+  <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>ðŸ‘¨â€ðŸ’»</text></svg>">
   <link rel="stylesheet" href="/css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -761,19 +761,19 @@ def build():
           </div>
         </li>
       </ul>
-      <div class="menu-toggle" onclick="toggleMenu()" aria-label="menu">☰</div>
+      <div class="menu-toggle" onclick="toggleMenu()" aria-label="menu">â˜°</div>
     </nav>
   </header>
   <main>
     <h1 data-i18n="blog-title">Blog</h1>
-    <p class="blog-intro" data-i18n="blog-intro">Chia sẻ kiến thức và kinh nghiệm trong lập trình mạng với Java và JavaScript</p>
+    <p class="blog-intro" data-i18n="blog-intro">Chia sáº» kiáº¿n thá»©c vÃ  kinh nghiá»‡m trong láº­p trÃ¬nh máº¡ng vá»›i Java vÃ  JavaScript</p>
     <ul class="posts">
       {''.join(items)}
     </ul>
     {get_social_section_html()}
   </main>
   {get_footer_html(site_title)}
-  <script src="/js/i18n.js"></script>
+  <script src="/js/i18n.js?v=1.1"></script>
     <script>
       function toggleMenu(){{
         document.body.classList.toggle('menu-open');
@@ -818,7 +818,7 @@ def build():
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Blog - {site_title}</title>  <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👨‍💻</text></svg>">  <link rel="stylesheet" href="/css/style.css">
+  <title>Blog - {site_title}</title>  <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>ðŸ‘¨â€ðŸ’»</text></svg>">  <link rel="stylesheet" href="/css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
@@ -845,7 +845,7 @@ def build():
           </div>
         </li>
       </ul>
-      <div class="menu-toggle" onclick="toggleMenu()" aria-label="menu">☰</div>
+      <div class="menu-toggle" onclick="toggleMenu()" aria-label="menu">â˜°</div>
     </nav>
   </header>
   <main>
@@ -857,7 +857,7 @@ def build():
     {get_social_section_html()}
   </main>
   {get_footer_html(site_title)}
-  <script src="/js/i18n.js"></script>
+  <script src="/js/i18n.js?v=1.1"></script>
     <script>
       function toggleMenu(){{
         document.body.classList.toggle('menu-open');
@@ -872,5 +872,6 @@ def build():
 
 if __name__ == '__main__':
     build()
+
 
 
