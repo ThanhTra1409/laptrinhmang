@@ -713,13 +713,14 @@ def build():
         # Add data-i18n attribute for post titles (extract number from slug like '01-socket-java' -> 'post-01')
         post_num = p['slug'].split('-')[0]  # Get '01', '02', etc.
         post_i18n_key = f"post-{post_num}"
+        excerpt_i18n_key = f"excerpt-{post_num}"
         
         # Create structured card HTML
         card_content = f'''
         {thumb_html}
         <div class="post-card-content">
           <a href="/posts/{p['slug']}.html" data-i18n="{post_i18n_key}">{p['title']}</a>
-          <p class="excerpt">{p['summary']}</p>
+          <p class="excerpt" data-i18n="{excerpt_i18n_key}">{p['summary']}</p>
           <div class="post-meta">
             <span class="post-date">{p['date']}</span>
           </div>
@@ -797,13 +798,14 @@ def build():
         
         post_num = p['slug'].split('-')[0]
         post_i18n_key = f"post-{post_num}"
+        excerpt_i18n_key = f"excerpt-{post_num}"
         
         # Create structured card HTML
         card_content = f'''
         {thumb_html}
         <div class="post-card-content">
           <a href="/posts/{p['slug']}.en.html" data-i18n="{post_i18n_key}">{p['title']}</a>
-          <p class="excerpt">{p['summary']}</p>
+          <p class="excerpt" data-i18n="{excerpt_i18n_key}">{p['summary']}</p>
           <div class="post-meta">
             <span class="post-date">{p['date']}</span>
           </div>

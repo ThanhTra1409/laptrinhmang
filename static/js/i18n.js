@@ -16,6 +16,7 @@ const translations = {
     // Hero Content
     'hero-name': 'Nguyễn Thanh Trà',
     'hero-role': 'Software Engineer | Backend Developer',
+    'hero-intro-main': 'Tôi là sinh viên năm 4 yêu thích công nghệ phần mềm, hiện đang tìm hiểu các kiến thức cơ bản về lập trình và phát triển phần mềm. Có tinh thần học hỏi, chủ động rèn luyện tư duy logic và kỹ năng chuyên môn để phục vụ học tập và công việc trong tương lai.',
     'hero-intro-text': 'Tôi yêu thích công nghệ phần mềm, hiện đang tìm hiểu các kiến thức cơ bản về lập trình và phát triển phần mềm. Có tinh thần học hỏi, chủ động rèn luyện tư duy logic và kỹ năng chuyên môn để phục vụ học tập và công việc trong tương lai.',
     'backend-systems': 'Backend Systems',
     'network-programming': 'Network Programming',
@@ -83,7 +84,19 @@ const translations = {
     'post-08': 'Xử lý REST API với Express (Node.js)',
     'post-09': 'Bảo mật cơ bản: CORS và chính sách cho API',
     
+    // Post Excerpts
+    'excerpt-01': 'Lập trình mạng là một phần quan trọng trong phát triển ứng dụng hiện đại. Socket là nền tảng cơ bản nhất để thiết lập kết nối mạng giữa các máy tính....',
+    'excerpt-02': 'Trong bài trước, chúng ta đã tìm hiểu về Socket cơ bản trong Java. Tuy nhiên, một server đơn giản chỉ xử lý một client tại một thời điểm là chưa đủ ch...',
+    'excerpt-03': 'Trong các bài trước, chúng ta đã tìm hiểu về Socket cơ bản và multithreading server. Tuy nhiên, với mô hình thread-per-connection, khi số lượng kết nố...',
+    'excerpt-04': 'HTTP là giao thức nền tảng của web, được sử dụng để truyền tải dữ liệu giữa client và server. Trong Java, chúng ta có thể dễ dàng tạo HTTP client để g...',
+    'excerpt-05': 'Trong phát triển web hiện đại, việc giao tiếp giữa client và server là thiết yếu. JavaScript cung cấp hai công cụ chính: Fetch API cho các yêu cầu HTT...',
+    'excerpt-06': 'Node.js với kiến trúc event-driven và non-blocking I/O là nền tảng tuyệt vời để xây dựng server mạng hiệu năng cao. Module `net` được tích hợp sẵn tro...',
+    'excerpt-07': 'WebSocket là công nghệ tuyệt vời cho giao tiếp realtime, nhưng việc implement từ đầu có thể phức tạp. Socket.IO là thư viện giúp đơn giản hóa quá trìn...',
+    'excerpt-08': 'Express.js là framework web phổ biến nhất cho Node.js, cung cấp các công cụ đơn giản nhưng mạnh mẽ để xây dựng web server và REST API. Với cú pháp ngắ...',
+    'excerpt-09': 'Khi xây dựng web API, bảo mật là mối quan tâm hàng đầu. Tuy nhiên, nhiều developer mới bắt đầu thường gặp phải lỗi CORS hoặc bỏ qua các vấn đề bảo mật...',
+    
     // Certificates
+    'certificates': 'Chứng chỉ và thành tựu',
     'achievements-title': 'Chứng Chỉ & Thành Tựu',
     'cert-1-title': 'Networking Basics',
     'cert-1-issuer': 'Nguyễn Thanh Trà',
@@ -156,10 +169,12 @@ const translations = {
     'tagline': 'Sharing network programming knowledge — Java & JavaScript',
     'view-posts': 'View Posts',
     'about-me': 'About Me',
+    'hero-greeting': 'Hello, I am',
     
     // Hero Content
     'hero-name': 'Nguyen Thanh Tra',
     'hero-role': 'Software Engineer | Backend Developer',
+    'hero-intro-main': 'I am a final year student passionate about software technology and currently learning the fundamentals of programming and software development. I have a strong learning spirit, actively training logical thinking and professional skills to serve my studies and future career.',
     'hero-intro-text': 'I am passionate about software technology and currently learning the fundamentals of programming and software development. I have a strong learning spirit, actively training logical thinking and professional skills to serve my studies and future career.',
     'backend-systems': 'Backend Systems',
     'network-programming': 'Network Programming',
@@ -227,7 +242,19 @@ const translations = {
     'post-08': 'Handling REST API with Express (Node.js)',
     'post-09': 'Basic Security: CORS and API Policies',
     
+    // Post Excerpts
+    'excerpt-01': 'Network programming is an essential part of modern application development. Socket is the most fundamental foundation for establishing network connections between computers....',
+    'excerpt-02': 'In the previous article, we learned about basic Socket in Java. However, a simple server that handles only one client at a time is not sufficient...',
+    'excerpt-03': 'In previous articles, we learned about basic Socket and multithreading server. However, with the thread-per-connection model, when the number of connections...',
+    'excerpt-04': 'HTTP is the foundational protocol of the web, used to transfer data between client and server. In Java, we can easily create HTTP clients to make requests...',
+    'excerpt-05': 'In modern web development, communication between client and server is essential. JavaScript provides two main tools: Fetch API for HTTP requests...',
+    'excerpt-06': 'Node.js with its event-driven architecture and non-blocking I/O is an excellent foundation for building high-performance network servers. The `net` module comes built-in...',
+    'excerpt-07': 'WebSocket is great technology for realtime communication, but implementing it from scratch can be complex. Socket.IO is a library that simplifies the process...',
+    'excerpt-08': 'Express.js is the most popular web framework for Node.js, providing simple yet powerful tools for building web servers and REST APIs. With concise syntax...',
+    'excerpt-09': 'When building web APIs, security is a top concern. However, many beginner developers often encounter CORS errors or overlook security issues...',
+    
     // Certificates
+    'certificates': 'Certificates and Achievements',
     'achievements-title': 'Certificates & Achievements',
     'cert-1-title': 'Networking Basics',
     'cert-1-issuer': 'Nguyen Thanh Tra',

@@ -3,8 +3,8 @@
   <h1 data-i18n="site-title">{{ .Site.Title }}</h1>
   <p data-i18n="tagline">{{ .Site.Params.tagline }}</p>
   <div class="cta">
-    <a class="btn primary" href="{{ (site.GetPage "section" "posts").RelPermalink }}" data-i18n="view-posts">Xem bài viết</a>
-    <a class="btn ghost" href="{{ relURL "about/" }}" data-i18n="about-me">Về tôi</a>
+    <a class="btn primary" href="{{ absURL (site.GetPage "section" "posts").RelPermalink }}" data-i18n="view-posts">Xem bài viết</a>
+    <a class="btn ghost" href="{{ absURL "about/" }}" data-i18n="about-me">Về tôi</a>
   </div>
 </section>
 <section class="intro">
@@ -16,7 +16,7 @@
     {{ $pages := where .Site.RegularPages "Section" "posts" }}
     {{ range first 6 (sort $pages "Date" "desc") }}
     <li>
-      <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+      <a href="{{ .Permalink }}">{{ .Title }}</a>
       <p class="excerpt">{{ .Summary }}</p>
     </li>
     {{ end }}
