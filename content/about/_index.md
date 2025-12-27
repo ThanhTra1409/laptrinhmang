@@ -58,6 +58,15 @@ GPA: [2.91/4.0]
 
 ## Dự án & Portfolio
 
+### Đồ án chuyên ngành
+**[Pinswap - Website thu gom và phân loại pin phế thải](https://github.com/HyperOnlyTop/PinSwap)**  
+Hiện nay, việc thu gom và phân loại pin phế thải của người dân còn hạn chế do thiếu thông tin hướng dẫn và hệ thống quản lý tập trung. Từ thực tế đó, nhóm chúng em thực hiện đề tài "PinSwap – Xây dựng website phân loại pin phế thải" nhằm cung cấp nền tảng trực tuyến hỗ trợ người dùng phân loại pin, tìm điểm thu gom phù hợp, góp phần bảo vệ môi trường và nâng cao ý thức cộng đồng.
+
+**Công nghệ**: HTML, CSS, JavaScript, PHP, MySQL  
+**Ngày hoàn thành**: 19/12/2025  
+**Thành viên**: Ngô Phạm Ngọc Tú, Võ Nguyên Bình, Nguyễn Thanh Trà
+
+### Các kiến thức từ blog
 Các bài viết trong blog là các kiến thức mà tôi đã được học:
 - Xây dựng TCP/UDP Server với Java
 - Phát triển RESTful API với Node.js & Express

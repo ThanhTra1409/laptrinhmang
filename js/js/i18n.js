@@ -198,6 +198,7 @@ const translations = {
     'tools-tech': 'Tools & Technologies',
     'projects-portfolio': 'Projects & Portfolio',
     'blog-proof-text': 'Articles in the',
+    'blog-intro-text': 'Articles in the blog are knowledge that I have learned',
     'blog-proof-text2': 'section demonstrate my knowledge and practical skills in',
     'project-1': 'Building TCP/UDP Server with Java',
     'project-2': 'Developing RESTful API with Node.js & Express',
